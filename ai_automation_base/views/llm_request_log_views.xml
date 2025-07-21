@@ -60,7 +60,7 @@
                             <page string="Response Data" name="response_data">
                                 <field name="response_data" widget="ace" options="{'mode': 'json'}" readonly="1"/>
                             </page>
-                            <page string="Error Details" name="error_details" attrs="{'invisible': [('status', '!=', 'error')]}">
+                            <page string="Error Details" name="error_details" invisible="status != 'error'">
                                 <field name="error_message" readonly="1"/>
                             </page>
                         </notebook>
