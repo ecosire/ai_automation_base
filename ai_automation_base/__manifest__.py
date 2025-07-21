@@ -42,6 +42,11 @@
     'images': [
         'static/description/cover.png',
         'static/description/icon.png',
+        'static/description/icons/icon_16.png',
+        'static/description/icons/icon_32.png',
+        'static/description/icons/icon_64.png',
+        'static/description/icons/icon_128.png',
+        'static/description/icons/icon_256.png',
         'static/description/main_screenshot.png',
         'static/description/provider_configuration.png',
         'static/description/ai_dashboard.png',
