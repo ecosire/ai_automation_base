@@ -20,4 +20,4 @@ access_llm_claude_service_ai_manager,llm.claude.service.ai.manager,model_llm_cla
 access_llm_claude_service_ai_admin,llm.claude.service.ai.admin,model_llm_claude_service,ai_automation_base.group_ai_admin,1,0,0,0
 access_llm_request_log_ai_user,llm.request.log.ai.user,model_llm_request_log,ai_automation_base.group_ai_user,1,0,0,0
 access_llm_request_log_ai_manager,llm.request.log.ai.manager,model_llm_request_log,ai_automation_base.group_ai_manager,1,0,0,0
-access_llm_request_log_ai_admin,llm.request.log.ai.admin,model_llm_request_log,ai_automation_base.group_ai_admin,1,0,0,0 
+access_llm_request_log_ai_admin,llm.request.log.ai.admin,model_llm_request_log,ai_automation_base.group_ai_admin,1,0,0,0
