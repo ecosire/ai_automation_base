@@ -40,6 +40,7 @@
     'auto_install': False,
     'license': 'LGPL-3',
     'images': [
+        'static/description/cover.png',
         'static/description/icon.png',
         'static/description/main_screenshot.png',
         'static/description/provider_configuration.png',
