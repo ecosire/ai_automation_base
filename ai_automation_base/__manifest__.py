@@ -1,6 +1,6 @@
 {
     'name': 'AI Automation Base',
-    'version': '1.0.0',
+    'version': '19.0.0.0.0',
     'category': 'Extra Tools/AI',
     'summary': 'Base module for integrating major LLM providers into Odoo',
     'description': """
@@ -8,17 +8,6 @@
         scalable, and extensible foundation for integrating Large Language Models (LLMs) into your Odoo ecosystem. 
         Built with modern architecture and security best practices, it enables seamless AI automation 
         across all your business processes.
-        
-        Key Features:
-        - Secure API key management with encryption
-        - Provider-agnostic interface for OpenAI, Google Gemini, and Anthropic Claude
-        - Text generation, chat completion, and embeddings support
-        - Streaming responses and function calling capabilities
-        - Comprehensive monitoring and analytics
-        - Modern, responsive user interface
-        - Enterprise-grade security and access control
-        
-        Transform your Odoo with the power of AI automation!
     """,
     'author': 'ECOSIRE (PRIVATE) LIMITED',
     'website': 'https://www.ecosire.com',
@@ -31,6 +20,9 @@
         'views/llm_provider_views.xml',
         'views/llm_api_key_views.xml',
         'views/llm_provider_model_views.xml',
+        'views/llm_llama_service_views.xml',
+        'views/llm_deepseek_service_views.xml',
+        'views/llm_grok_service_views.xml',
         'views/llm_request_log_views.xml',
         'data/default_providers.xml',
     ],
