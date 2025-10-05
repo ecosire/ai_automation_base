@@ -41,6 +41,9 @@ class LLMBaseService(models.AbstractModel):
             'openai': 'OpenAI',
             'gemini': 'Google Gemini',
             'claude': 'Anthropic Claude',
+            'llama': 'Meta Llama',
+            'deepseek': 'DeepSeek AI',
+            'grok': 'xAI Grok',
         }
         for record in self:
             record.provider_name = provider_names.get(record.provider_code, 'Unknown')

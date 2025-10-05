@@ -61,6 +61,14 @@ class LLMProvider(models.Model):
         help='Additional notes or internal documentation'
     )
     
+    # Related fields for monitoring
+    llm_request_log_ids = fields.One2many(
+        'llm.request.log',
+        'provider_id',
+        string='Request Logs',
+        help='Logs of API requests made to this provider'
+    )
+    
     # Computed fields for monitoring
     last_request_date = fields.Datetime(
         string='Last Request',

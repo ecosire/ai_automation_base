@@ -22,6 +22,8 @@ class LLMProviderModel(models.Model):
         ('openai', 'OpenAI'),
         ('gemini', 'Google Gemini'),
         ('claude', 'Anthropic Claude'),
+        ('llama', 'Meta Llama'),
+        ('grok', 'xAI Grok'),
         ('other', 'Other'),
     ], string='Provider Type', required=True, help='Type of LLM provider')
     

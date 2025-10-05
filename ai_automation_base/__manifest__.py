@@ -1,29 +1,18 @@
 {
     'name': 'AI Automation Base',
-    'version': '1.0.0',
+    'version': '19.0.0.0.0',
     'category': 'Extra Tools/AI',
     'summary': 'Base module for integrating major LLM providers into Odoo',
     'description': """
-        This module provides a foundational layer for AI automation in Odoo,
-        enabling seamless API access to major Large Language Model (LLM) providers
-        like OpenAI, Google Gemini, and Anthropic Claude. It acts as a centralized
-        hub for LLM configuration, secure API key management, and standardized
-        LLM interaction, serving as the basis for building more advanced AI applications
-        or introducing AI features into existing Odoo apps.
-        
-        Key Features:
-        - Provider-agnostic LLM integration
-        - Secure API key management
-        - Standardized LLM interaction interface
-        - Comprehensive error handling and monitoring
-        - Extensible architecture for future AI capabilities
-        - Support for streaming responses
-        - Framework for custom tools/function calling
+        AI Automation Base is a comprehensive, enterprise-grade Odoo module that provides a secure, 
+        scalable, and extensible foundation for integrating Large Language Models (LLMs) into your Odoo ecosystem. 
+        Built with modern architecture and security best practices, it enables seamless AI automation 
+        across all your business processes.
     """,
     'author': 'ECOSIRE (PRIVATE) LIMITED',
     'website': 'https://www.ecosire.com',
     'email': 'info@ecosire.com',
-    'depends': ['base', 'web', 'keychain'],
+    'depends': ['base', 'web'],
     'data': [
         'security/ai_automation_base_security.xml',
         'security/ir.model.access.csv',
@@ -31,6 +20,9 @@
         'views/llm_provider_views.xml',
         'views/llm_api_key_views.xml',
         'views/llm_provider_model_views.xml',
+        'views/llm_llama_service_views.xml',
+        'views/llm_deepseek_service_views.xml',
+        'views/llm_grok_service_views.xml',
         'views/llm_request_log_views.xml',
         'data/default_providers.xml',
     ],
@@ -39,14 +31,26 @@
     'application': True,
     'auto_install': False,
     'license': 'LGPL-3',
-    'images': [],
+    'images': [
+        'static/description/cover.png',
+        'static/description/icon.png',
+        'static/description/icons/icon_16.png',
+        'static/description/icons/icon_32.png',
+        'static/description/icons/icon_64.png',
+        'static/description/icons/icon_128.png',
+        'static/description/icons/icon_256.png',
+        'static/description/main_screenshot.png',
+        'static/description/provider_configuration.png',
+        'static/description/ai_dashboard.png',
+        'static/description/usage_analytics.png',
+    ],
     'price': 0.0,
     'currency': 'USD',
     'support': 'info@ecosire.com',
     'maintainer': 'ECOSIRE (PRIVATE) LIMITED',
     'contributors': [],
     'external_dependencies': {
-        'python': ['requests', 'json'],
+        'python': ['requests', 'json', 'cryptography'],
     },
     'assets': {
         'web.assets_backend': [
